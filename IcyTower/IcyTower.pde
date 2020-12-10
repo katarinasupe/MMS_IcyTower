@@ -42,7 +42,7 @@ void setup()
     bg=loadImage("background.png");
     bg2=loadImage("background2.png");
     clockEmpty=loadImage("clock_empty.png");
-    clockHandle = loadImage("clock_handle.png");
+    clockHandle = loadImage("clock_handle_new.png");
     originalTimer = loadImage("combo_timer.png");
 
     boards = new Leaderboards();

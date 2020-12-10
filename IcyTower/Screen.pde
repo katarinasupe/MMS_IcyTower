@@ -172,9 +172,9 @@ class Screen {
     
     void setClockHandle(PImage clockHandle, float angle)
     {
+        imageMode(CENTER);
         pushMatrix();
-        translate(width/2, height/2);
-        translate(-clockHandle.width/2, -clockHandle.height/2); //ili rotate pa drugi translate?
+        translate(cx, cy+6);
         rotate(angle);
         image(clockHandle, 0, 0);
         popMatrix();   
@@ -192,16 +192,6 @@ class Screen {
       if(lvl==0)
       {
         noStroke();        
-
-        /*pushMatrix();
-        rotate(s_1);
-        image(pointer, cx * cos(s_1) - cy_new * sin(s_1), cy_new * cos(s_1) - cx * sin(s_1));
-        popMatrix();*/
-        
-        // Draw the hands of the clock
-     /*   stroke(255,0,0);
-        strokeWeight(7);
-        line(cx, cy, cx + cos(s) * secondsRadius, cy + sin(s) * secondsRadius);*/
         stroke(255,0,0);
         strokeWeight(2);
       }
@@ -216,14 +206,9 @@ class Screen {
           float r = random(-2,2);
           noStroke();
           image(clockEmpty, cx+r, cy+r, width/8, height/5);
+          setClockHandle(clockHandle, angle); //da se vidi kazaljka i kad se sat poveca
         }
         
-          
-        // Draw the hands of the clock
-      /*  stroke(255,0,0);
-        strokeWeight(7);
-        line(cx, cy, cx + cos(s) * secondsRadius, cy + sin(s) * secondsRadius);*/
-
         stroke(255,0,0);
         strokeWeight(2);
 
@@ -235,17 +220,21 @@ class Screen {
     void hurry()
     {
       //ispis obavijesti o ubrzavanju i postavljanje zvuka opomene
-      float r=random(-2,2);
+      float r = random(-2,2);
       textAlign(CENTER);
       var++;
-      if (var>255)var=0;
-      textWithOutline("Hurry up!", height/2+r, width/3+r, color(var, 255, 255), 60);
+      if(var>255)
+      {
+        var=0;
+      }
+      textWithOutline("Hurry up!", width/2+r, height/2+r, color(var, 255, 255), 60);
       hurry_up.play();
+      
       if ( hurry_up.position() == hurry_up.length() )
       {
+        
         hurry_up.rewind();
       }
-
     }
 
 
