@@ -12,7 +12,7 @@ Ukoliko program javlja greške vezano uz font, možete kreirati font u Tools, Cr
 ## Update
 - Dodan je originalni sat iz igrice
 - Dodan je originalni mjerač comboa
-- Poravnanje teksta u igrici
+- Poravnanje i centriranje teksta u igrici
 - Uređivanje koda (uvlačenja, hrvatsko-engleski nazivi, camelCase)
 
 #### Napomena
@@ -23,7 +23,7 @@ Ovaj projekt je nadogradnja postojećeg projekta, a niže su navedene osobe koje
  
 [2018./2019.] https://github.com/bderic1/MMS-IcyTower (originalni projekt)
 
-## Prijedlozi za unaprijeđenje
+## Prijedlozi za unaprjeđenje
 - Kao i kolegica prošle godine, nisam stigla implementirati kontrolu zvuka. Bilo bi zgodno pokušati. 
 - Pri pauziranju igrice, možete primijetiti da se neke stvari u pozadini malo razmjeste. Nisam se stigla tim pozabaviti, možda je dosta jednostavno, ali je stvar na koju bi se mogla obratiti pozornost.
 - Uljepšavanje koda i kreiranje kvalitetne dokumentacije
