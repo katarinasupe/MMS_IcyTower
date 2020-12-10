@@ -27,5 +27,4 @@ Ovaj projekt je nadogradnja postojećeg projekta, a niže su navedene osobe koje
 - Kao i kolegica prošle godine, nisam stigla implementirati kontrolu zvuka. Bilo bi zgodno pokušati. 
 - Pri pauziranju igrice, možete primijetiti da se neke stvari u pozadini malo razmjeste. Nisam se stigla tim pozabaviti, možda je dosta jednostavno, ali je stvar na koju bi se mogla obratiti pozornost.
 - Uljepšavanje koda i kreiranje kvalitetne dokumentacije
-- Dodavanje novog lika bi bio isto zgodan posao
 - Omogućiti full screen mode
