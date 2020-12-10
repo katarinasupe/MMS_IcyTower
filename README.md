@@ -10,7 +10,7 @@ U Processing izborniku odaberite Sketch, zatim import library, pa add library i 
 Ukoliko program javlja greške vezano uz font, možete kreirati font u Tools, Create Font... te zatim pronađete odgovarajući font iz programa.  
 
 ## Update
-- Dodan je originalni sat iz igrice
+- Dodan je originalni sat (i kazaljka) iz igrice
 - Dodan je originalni mjerač comboa
 - Poravnanje i centriranje teksta u igrici
 - Uređivanje koda (uvlačenja, hrvatsko-engleski nazivi, camelCase)
